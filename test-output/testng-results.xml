@@ -1,33 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-14T04:54:18Z" name="Default suite" finished-at="2020-12-14T04:54:41Z" duration-ms="23177">
+  <suite started-at="2020-12-14T05:52:11Z" name="Default suite" finished-at="2020-12-14T05:52:31Z" duration-ms="20273">
     <groups>
     </groups>
-    <test started-at="2020-12-14T04:54:18Z" name="Default test" finished-at="2020-12-14T04:54:41Z" duration-ms="23177">
+    <test started-at="2020-12-14T05:52:11Z" name="Default test" finished-at="2020-12-14T05:52:31Z" duration-ms="20273">
       <class name="com.qa.rf.TestPages.RegisterPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.rf.TestPages.RegisterPageTest@398dada8]" started-at="2020-12-13T23:54:18Z" name="setup" finished-at="2020-12-13T23:54:24Z" duration-ms="5620" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Enterinfo()[pri:0, instance:com.qa.rf.TestPages.RegisterPageTest@398dada8]" started-at="2020-12-13T23:54:24Z" name="Enterinfo" finished-at="2020-12-13T23:54:26Z" duration-ms="1760" status="PASS">
+        <test-method signature="Enterinfo(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.rf.TestPages.RegisterPageTest@2049a9c1]" started-at="2020-12-14T00:52:11Z" name="Enterinfo" data-provider="getdata" finished-at="2020-12-14T00:52:11Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getLastRowNum()" because "com.qa.rf.Util.ReadExcel.sheet" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getLastRowNum()" because "com.qa.rf.Util.ReadExcel.sheet" is null
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:115)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:509)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getLastRowNum()" because "com.qa.rf.Util.ReadExcel.sheet" is null
+	at com.qa.rf.Util.ReadExcel.getTestData(ReadExcel.java:50)
+	at com.qa.rf.TestPages.RegisterPageTest.getdata(RegisterPageTest.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:55)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+	... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Enterinfo -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.rf.TestPages.RegisterPageTest@398dada8]" started-at="2020-12-13T23:54:26Z" name="setup" finished-at="2020-12-13T23:54:30Z" duration-ms="4520" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.rf.TestPages.RegisterPageTest@2049a9c1]" started-at="2020-12-14T00:52:11Z" name="setup" finished-at="2020-12-14T00:52:17Z" duration-ms="5864" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="changecc()[pri:0, instance:com.qa.rf.TestPages.RegisterPageTest@398dada8]" started-at="2020-12-13T23:54:30Z" name="changecc" finished-at="2020-12-13T23:54:37Z" duration-ms="6831" status="PASS">
+        <test-method signature="changecc()[pri:0, instance:com.qa.rf.TestPages.RegisterPageTest@2049a9c1]" started-at="2020-12-14T00:52:17Z" name="changecc" finished-at="2020-12-14T00:52:26Z" duration-ms="8208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changecc -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.rf.TestPages.RegisterPageTest@398dada8]" started-at="2020-12-13T23:54:37Z" name="setup" finished-at="2020-12-13T23:54:41Z" duration-ms="4395" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.rf.TestPages.RegisterPageTest@2049a9c1]" started-at="2020-12-14T00:52:26Z" name="setup" finished-at="2020-12-14T00:52:31Z" duration-ms="5391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validatetitle()[pri:0, instance:com.qa.rf.TestPages.RegisterPageTest@398dada8]" started-at="2020-12-13T23:54:41Z" name="validatetitle" finished-at="2020-12-13T23:54:41Z" duration-ms="15" status="PASS">
+        <test-method signature="validatetitle()[pri:0, instance:com.qa.rf.TestPages.RegisterPageTest@2049a9c1]" started-at="2020-12-14T00:52:31Z" name="validatetitle" finished-at="2020-12-14T00:52:31Z" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatetitle -->

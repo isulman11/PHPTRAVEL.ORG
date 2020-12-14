@@ -5,8 +5,8 @@
     <classes>
       <class name="com.qa.rf.TestPages.RegisterPageTest">
         <methods>
+          <include name="Enterinfo"/>
           <include name="setup"/>
-          <include name="changecc"/>
         </methods>
       </class> <!-- com.qa.rf.TestPages.RegisterPageTest -->
     </classes>
